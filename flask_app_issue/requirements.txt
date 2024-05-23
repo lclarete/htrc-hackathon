@@ -1,0 +1,7 @@
+Flask
+requests
+pandas
+nltk
+matplotlib
+seaborn
+wordcloud
