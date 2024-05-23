@@ -2,6 +2,8 @@ import requests
 import re
 import pandas as pd
 from nltk.corpus import stopwords, words
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from matplotlib.backends.backend_pdf import PdfPages
