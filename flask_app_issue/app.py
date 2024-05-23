@@ -32,8 +32,12 @@ def submit_code():
         json.dump(data, f, indent=2)
 
     # Process the code using the functions from your_script
-    df = your_script.main(code)  # Assuming main function is adapted to take `code`
-    df.to_csv('output.csv', index=False)
+    
+    try:
+        df = your_script.main(code)  # Assuming main function is adapted to take `code`
+        df.to_csv('output.csv', index=False)
+    except:
+        return redirect('error.html')
 
     # Generate the PDF
     pdf_path = os.path.join(PDF_DIRECTORY, PDF_FILENAME)
