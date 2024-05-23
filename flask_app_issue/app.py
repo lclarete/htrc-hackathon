@@ -37,14 +37,14 @@ def submit_code():
         df = your_script.main(code)  # Assuming main function is adapted to take `code`
         df.to_csv('output.csv', index=False)
     except:
-        return redirect('error.html')
+        return render_template('error.html')
 
     # Generate the PDF
     pdf_path = os.path.join(PDF_DIRECTORY, PDF_FILENAME)
     your_script.export_charts_to_pdf(df, 'book_data.csv', pdf_path)
 
     # Serve the PDF file
-    return redirect(f'/download/{PDF_FILENAME}')
+    return render_template('success.html')
 
 @app.route('/download/<filename>')
 def download_file(filename):
