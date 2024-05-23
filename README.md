@@ -4,7 +4,7 @@ The EFC is a standalone web app (implemented in Flask) designed to make the Hath
 
 By providing user-friendly tools and data visualizations, the EFC aims to bridge the gap between humanities students and computational resources. This will empower them to leverage digital libraries without needing extensive programming knowledge.
 
-### What are Extracted Features?
+#### What are Extracted Features?
 The Extracted Features (https://htrc.github.io/torchlite-handbook/ef.html) are data elements derived from a chosen text in the HathiTrust Digital Library. The EFC presents these page- and volume-level features in a word frequency chart, word cloud, and frequency evolution chart, along with four word clusters based on topic modeling within the text. Word frequency charts exclude “stop words,” or common words such as articles, being verbs, prepositions, and pronouns from their results. 
 
 #### Local Installation: How-To
