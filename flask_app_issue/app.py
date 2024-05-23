@@ -44,7 +44,12 @@ def submit_code():
     your_script.export_charts_to_pdf(df, 'book_data.csv', pdf_path)
 
     # Serve the PDF file
-    return redirect(f'/download/{PDF_FILENAME}')
+    #return redirect(f'/download/{PDF_FILENAME}')
+    return redirect('/view_plots')
+
+@app.route('/view_plots')
+def view_plots():
+    return render_template('plots.html')
 
 @app.route('/download/<filename>')
 def download_file(filename):

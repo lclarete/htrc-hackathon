@@ -146,7 +146,7 @@ def export_charts_to_pdf(main_df, book_csv_path, pdf_path, fig_size=(10, 6)):
         generate_word_cloud(main_df, pdf=pdf, fig_size=(18, 6))
         plot_top_words_evolution(main_df, pdf=pdf, fig_size=(18, 6))
 
-def plot_top_20_frequent_words(df, token_column='token', pdf=None, fig_size=(15, 6)):
+def plot_top_20_frequent_words(df, token_column='token', pdf=None, fig_size=(8, 4)):
     top_20_freq = df[token_column].value_counts()[:20]
 
     top20 = pd.DataFrame()
@@ -159,10 +159,10 @@ def plot_top_20_frequent_words(df, token_column='token', pdf=None, fig_size=(15,
     bars = sns.barplot(x='Words', y='Counts', data=top20, palette=colors, ax=ax)
     bars.set(title='Top 20 Most Frequent Words in the Corpus')
 
+    plt.savefig("static/frequency.png")
+
     if pdf:
         pdf.savefig(fig)
-    else:
-        plt.show()
     plt.close(fig)
 
 def generate_word_cloud(df, token_column='token', pdf=None, fig_size=(10, 6)):
@@ -175,10 +175,11 @@ def generate_word_cloud(df, token_column='token', pdf=None, fig_size=(10, 6)):
     ax.axis('off')
     ax.set_title('Word Cloud of Most Frequent Tokens')
 
+
+    plt.savefig("static/word_cloud.png")
+
     if pdf:
         pdf.savefig(fig)
-    else:
-        plt.show()
     plt.close(fig)
 
 def plot_top_words_evolution(df, token_column='token', count_column='counts', page_column='page', top_n=10, pdf=None, fig_size=(10, 6)):
@@ -195,8 +196,8 @@ def plot_top_words_evolution(df, token_column='token', count_column='counts', pa
     ax.legend(title='Words', bbox_to_anchor=(1.05, 1), loc='upper left', fontsize='small')
     ax.grid(True)
 
+    plt.savefig("static/top_words.png")
+
     if pdf:
         pdf.savefig(fig)
-    else:
-        plt.show()
     plt.close(fig)
