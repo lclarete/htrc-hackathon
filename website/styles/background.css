@@ -1,0 +1,7 @@
+body, html {
+    height: 100%; /* Full height for body and html */
+    margin: 0; /* Remove default margin */
+    background-image: url('../images/image.webp'); /* Background image path */
+    background-size: cover; /* Ensure background image covers the entire area */
+    background-position: center; /* Center the background image */
+}

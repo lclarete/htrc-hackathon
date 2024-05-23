@@ -1,0 +1,82 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background-image: url('image.webp');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align items to the bottom */
+    padding-bottom: 50px; /* Adjust the padding to move the form up or down */
+}
+
+.form-wrapper {
+    padding: 200px;
+    border-radius: 100px;
+    text-align: center;
+    width: 280px; /* Adjust width as necessary */
+    margin-left: -60px; /* Adjust this value to move the form slightly to the left */
+}
+
+h1 {
+    color: white; /* Set font color to white */
+}
+
+form input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%; /* Make the input box smaller */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 11px 10px; /* Make the button smaller */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; /* Adjust width if necessary */
+}
+
+form button:hover {
+    background-color: #45a049;
+}

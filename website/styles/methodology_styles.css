@@ -1,0 +1,49 @@
+.container {
+    padding-top: 60px; /* Adjust for fixed navbar */
+}
+
+.content-section {
+    padding: 20px;
+    color: white;
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.frame .text {
+    flex: 1;
+    font-size: 1.2em; /* Bigger font for text */
+}
+
+.frame .text h3 {
+    margin: 0;
+}
+
+.frame .text span {
+    font-size: 1.5em; /* Bigger font for "Step *" */
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.frame .image {
+    flex: 1;
+    text-align: center;
+}
+
+.frame .image img {
+    max-width: 60%; /* Reduced size of images */
+    height: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .frame {
+        flex-direction: column;
+    }
+    .frame .image {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,7 @@
+# .dockerignore
+output.csv
+*.pyc
+__pycache__
+.env
+.git
+.gitignore

@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif; /* Set font family */
+}
+
+.navbar {
+    background-color: #333; /* Solid black background */
+    overflow: hidden; /* Prevent content overflow */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position at the very top */
+    width: 100%; /* Full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    padding: 10px 0; /* Vertical padding for the navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove default list styling */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out list items evenly */
+}
+
+.navbar li {
+    float: left; /* Float list items to the left */
+}
+
+.navbar a {
+    display: block; /* Make links block-level elements */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+}
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding for the container */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.welcome-container {
+    max-width: 300px; /* Maximum width of the box */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 15px; /* Padding inside the box */
+    border-radius: 10px; /* Rounded corners */
+    text-align: center; /* Center text inside the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    margin: 20px 20px 20px 0; /* Margin around the box, more space on the right */
+}
+
+.welcome-title {
+    font-size: 1.5em; /* Larger font size for the title */
+    margin: 0; /* Remove default margin */
+    color: black; /* Black text color */
+}
+
+.welcome-text {
+    margin: 10px 0 0 0; /* Margin for the text */
+    color: black; /* Black text color */
+}
+
+.form-wrapper {
+    padding: 20px; /* Padding inside the form wrapper */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Maximum width */
+    margin: 20px 0; /* Margin around the form wrapper, space on top and bottom */
+}
+
+h1 {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 10px; /* Margin below the heading */
+    color: white; /* Set heading text color to white */
+}
+
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form items in a column */
+    align-items: center; /* Center the form items */
+}
+
+input[type="text"] {
+    padding: 8px; /* Smaller padding inside the input */
+    margin-bottom: 10px; /* Margin below the input */
+    width: 60%; /* Reduce the width of the input */
+    border: 1px solid #ccc; /* Border for the input */
+    border-radius: 4px; /* Rounded corners for the input */
+}
+
+button {
+    padding: 5px 20px; /* Smaller padding for the button */
+    background-color: green; /* Background color for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+button:hover {
+    background-color: darkgreen; /* Background color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; /* Stack navbar items vertically */
+        text-align: center; /* Center navbar text */
+    }
+    .form-wrapper {
+        width: 100%; /* Full width on small screens */
+    }
+    .welcome-container {
+        width: 100%; /* Full width on small screens */
+    }
+}

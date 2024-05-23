@@ -1,0 +1,8 @@
+Flask==2.1.1
+requests
+pandas
+nltk
+matplotlib
+seaborn
+wordcloud
+Werkzeug==2.0.3

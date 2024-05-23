@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/methodology_styles.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('methodology') }}">How it works</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="content-section">
+            <h2>How it works</h2>
+            <div class="frame">
+                <h3>Step 1: Find the book that you'd like to explore</h3>
+                <img src="{{ url_for('static', filename='images/find_book.webp') }}" alt="Find the book">
+            </div>
+            <div class="frame">
+                <h3>Step 2: Ask your librarian for the OCLC code</h3>
+                <img src="{{ url_for('static', filename='images/talk_librarian.webp') }}" alt="Ask your librarian">
+            </div>
+            <div class="frame">
+                <h3>Step 3: Enter the OCLC and click on submit</h3>
+                <img src="{{ url_for('static', filename='images/looking_pc.webp') }}" alt="Enter the OCLC">
+            </div>
+            <div class="frame">
+                <h3>Step 4: Download the pdf and analyze the results</h3>
+                <img src="{{ url_for('static', filename='images/results.webp') }}" alt="Download and analyze results">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
