@@ -19,6 +19,8 @@ The Extracted Features (https://htrc.github.io/torchlite-handbook/ef.html) are d
    ```
 5. Point your browser to `http://127.0.0.1:5000` in order to use the app locally.
 
+#### Credits
+
 The EFC was created by Lívia Clarete, Danielle Nasenbeny, Eryclis Silva, and Dolsy Smith during the Tools for Open Research and Computation with HathiTrust: Leveraging Intelligent Text Extraction (TORCHLITE) Hackathon hosted by the HathiTrust Research Center at University of Illinois at Urbana-Champaign.
 
 Last Updated May 23, 2024. 
